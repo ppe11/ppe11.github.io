@@ -11,7 +11,7 @@ const Projects = (isDarkMode) => {
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus numquam laborum corrupti ipsa. Magni obcaecati, 
             reiciendis suscipit quidem hic repellat accusantium, inventore debitis labore ab architecto dolorem voluptatum recusandae harum.
             </p>
-            
+
             <div className='grid grid-cols-auto my-10 gap-5 dark:text-black'>
                 {workData.map((project, index) => (
                     <div
@@ -28,6 +28,12 @@ const Projects = (isDarkMode) => {
                     </div>
                 ))}
             </div>
+
+            <a href="" className='w-max flex items-center justify-center gap-2 text-gray-700 border-[0.5px] 
+            border-gray-700 rounded-full py-3 px-10 mx-auto my-20 hover:bg-lightHover duration-500 dark:text-white 
+            dark:border-white dark:hover:bg-darkHover'>
+            Show more 
+            </a>
       </div>
     )
   }
