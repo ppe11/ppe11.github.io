@@ -15,6 +15,14 @@ const Header = () => {
         As a passionate Software Systems student at Simon Fraser University, I thrive on solving complex problems and creating innovative software solutions.
          Whether it's crafting clean, efficient code or exploring new technologies, I’m always eager to learn and grow as a developer.
         </p>
+        <div className='flex flex-col sm:flex-row items-center gap-4 mt-4'>
+            <a href='#contact' className='px-10 py-3 border rounded-full bg-black text-white flex items-center 
+            gap-2 dark:bg-transparent'>Contact me<Image src={assets.right_arrow_white} alt='arrow-icon' className='w-4'/></a>
+
+            <a href='/sample-resume.pdf' download className='px-10 py-3 border rounded-full border-gray-500 flex 
+            items-center gap-2 dark:text-black bg-white'>
+            My Resume<Image src={assets.download_icon} alt='download-icon' className='w-4'/></a>
+        </div>
     </div>
   )
 }
