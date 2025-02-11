@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import { assets, infoList } from '@/assets /assets'
+import { assets, infoList, toolsData } from '@/assets /assets'
 
 const About = (isDarkMode) => {
   return (
@@ -26,6 +26,17 @@ const About = (isDarkMode) => {
                     <p className='text-gray-600 text-sm dark:text-white/80'>{description}</p>
                     </li>
                 ))}
+            </ul>
+
+            <h4 className='my-3 text-gray-700 font-Ovo dark:text-white text-xl'>Tools I use</h4>
+            <ul className='flex items-center gap-3 sm:gap-5'>
+              {toolsData.map((tool, index) => (
+                <li key={index} className="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black">
+                  <a href={tool.link} target="_blank" rel="noopener noreferrer">
+                    <Image src={tool.src} alt='Tools' className='w-5 sm:w-7' />
+                  </a>
+                </li>
+              ))}
             </ul>
         </div>
       </div>

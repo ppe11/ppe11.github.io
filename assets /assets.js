@@ -44,3 +44,9 @@ export const infoList = [
     { icon: assets.edu_icon, title: 'Education', description: 'Software Systems student at Simon Fraser Univeristy' },
     { icon: assets.project_icon, title: 'Projects', description: 'lorem  ipsum dolor, sit amet consectetur adipisicing elit' }
 ];
+
+export const toolsData = [
+    { src: assets.vscode, link: "https://code.visualstudio.com/" },
+    { src: assets.figma, link: "https://www.figma.com/" },
+    { src: assets.git, link: "https://git-scm.com/" }
+  ];
