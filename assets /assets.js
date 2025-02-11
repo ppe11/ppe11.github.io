@@ -50,3 +50,27 @@ export const toolsData = [
     { src: assets.figma, link: "https://www.figma.com/" },
     { src: assets.git, link: "https://git-scm.com/" }
   ];
+
+
+export const workData = [
+    {
+        title: 'Project 1',
+        description: 'lorem posa',
+        bgImage: '/project-1.jpg',
+    },
+    {
+        title: 'Project 2',
+        description: 'lorem set asset',
+        bgImage: '/project-2.jpg',
+    },
+    {
+        title: 'Project 3',
+        description: 'lorem aseto hic',
+        bgImage: '/project-3.jpg',
+    },
+    {
+        title: 'Project 4',
+        description: 'lorem tokk',
+        bgImage: '/project-4.jpg',
+    },
+]
