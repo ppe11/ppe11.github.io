@@ -1,6 +1,7 @@
 'use client'
 import { useEffect, useState } from "react";
 import Navbar from "./components/Navbar";
+import Header from "./components/Header";
 
 export default function Home() {
 
@@ -32,5 +33,5 @@ export default function Home() {
      <Navbar isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
      <Header isDarkMode={isDarkMode} />
     </>
-  );
+  ); 
 }
