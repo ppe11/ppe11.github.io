@@ -56,21 +56,21 @@ export const workData = [
     {
         title: 'Project 1',
         description: 'lorem posa',
-        bgImage: '/project-1.jpg',
+        bgImage: '/project-1.JPG',
     },
     {
         title: 'Project 2',
         description: 'lorem set asset',
-        bgImage: '/project-2.jpg',
+        bgImage: '/project-2.JPG',
     },
     {
         title: 'Project 3',
         description: 'lorem aseto hic',
-        bgImage: '/project-3.jpg',
+        bgImage: '/project-3.JPG',
     },
     {
         title: 'Project 4',
         description: 'lorem tokk',
-        bgImage: '/project-4.jpg',
+        bgImage: '/project-4.JPG',
     },
 ]
