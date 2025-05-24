@@ -12,7 +12,7 @@ const Projects = (isDarkMode) => {
         ab architecto dolorem voluptatum recusandae harum.
       </p>
 
-      <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 my-10 dark:text-black'>
+      <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 my-10 dark:text-black'>
         {workData.map((project, index) => (
           <motion.div
             key={index}
@@ -29,7 +29,7 @@ const Projects = (isDarkMode) => {
 
             {/* Project content */}
             <div className='p-5'>
-              <div className='flex justify-between items-start flex-wrap gap-4'>
+              <div className='flex justify-between items-start flex-wrap'>
 
                 {/* Text & Tags */}
                 <div className='flex flex-col max-w-[60%]'>
