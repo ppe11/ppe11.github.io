@@ -54,23 +54,29 @@ export const toolsData = [
 
 export const workData = [
     {
-        title: 'Project 1',
-        description: 'lorem posa',
+        title: 'Love At First Paw',
+        description: 'Pet Adoption Platform',
         bgImage: '/project-1.JPG',
+        tags: ['React', 'Tailwind CSS', 'API'],
+        liveLink: 'https://love-at-first-paw-six.vercel.app',
+        repoLink: 'https://github.com/ppe11/loveatfirstpaw',
     },
     {
         title: 'Project 2',
         description: 'lorem set asset',
+        language:'',
         bgImage: '/project-2.JPG',
+        tags: ['React', 'Tailwind CSS', 'API'],
+        liveLink: '',
+        repoLink: '',
     },
     {
         title: 'Project 3',
         description: 'lorem aseto hic',
+        language:'',
         bgImage: '/project-3.JPG',
-    },
-    {
-        title: 'Project 4',
-        description: 'lorem tokk',
-        bgImage: '/project-4.JPG',
+        tags: ['React', 'Tailwind CSS', 'API'],
+        liveLink: '',
+        repoLink: '',
     },
 ]
