@@ -12,7 +12,7 @@ const Projects = (isDarkMode) => {
         ab architecto dolorem voluptatum recusandae harum.
       </p>
 
-      <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 my-10 dark:text-black'>
+      <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 my-10 dark:text-black'>
         {workData.map((project, index) => (
           <motion.div
             key={index}
