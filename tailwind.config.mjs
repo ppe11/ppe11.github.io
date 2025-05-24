@@ -4,6 +4,9 @@ export default {
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/**/*.{js,ts,jsx,tsx,mdx}",        
+    "./assets/**/*.{js,ts,jsx,tsx,mdx}",   
+    "./**/*.{html,js,jsx,ts,tsx}",          
   ],
   theme: {
     extend: {
@@ -17,14 +20,15 @@ export default {
         Ovo: ["Ovo", "serif"],
       },
       boxShadow: {
-        'black' : '4px 4px 0 #000',
-        'white' : '4px 4px 0 #fff',
+        black: "4px 4px 0 #000",
+        white: "4px 4px 0 #fff",
       },
       gridTemplateColumns: {
-        'auto': 'repeat(auto-fit, minmax(200px, 1fr))'
-      }
+        auto: "repeat(auto-fit, minmax(200px, 1fr))",
+      },
     },
   },
-  darkMode: 'selector',
+  darkMode: "selector",
   plugins: [],
 };
+
