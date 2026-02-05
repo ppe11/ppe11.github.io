@@ -42,7 +42,7 @@ export const assets = {
 export const infoList = [
     { icon: assets.code_icon, title: 'Languages', description: 'C++, Python, Java, JavaScript, HTML, CSS, React.js, Tailwind CSS' },
     { icon: assets.edu_icon, title: 'Education', description: 'Software Systems student at Simon Fraser Univeristy' },
-    { icon: assets.project_icon, title: 'Projects', description: 'lorem  ipsum dolor, sit amet consectetur adipisicing elit' }
+    { icon: assets.project_icon, title: 'Projects', description: 'Selected full-stack and systems projects built with modern frameworks.' }
 ];
 
 export const toolsData = [

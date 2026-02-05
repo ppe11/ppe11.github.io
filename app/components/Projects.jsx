@@ -6,10 +6,10 @@ const Projects = (isDarkMode) => {
   return (
     <div id='project' className='w-full px-[12%] py-10 scroll-mt-20 min-h-screen'>
       <h4 className='text-center text-5xl font-Ovo'>My Projects</h4>
-      <p className='text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo'>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus numquam laborum corrupti ipsa. 
-        Magni obcaecati, reiciendis suscipit quidem hic repellat accusantium, inventore debitis labore 
-        ab architecto dolorem voluptatum recusandae harum.
+      <p className='text-center max-w-3xl mx-auto mt-5 mb-12 font-Ovo'>
+      A selection of projects demonstrating my work in full-stack and systems development.
+Built with a focus on clarity, performance, and usability.
+Continuously improved through learning and iteration.
       </p>
 
       <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 my-10 dark:text-black'>

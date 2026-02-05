@@ -13,7 +13,7 @@ const About = (isDarkMode) => {
             <Image src={assets.profile_img} alt='user-image' className='w-full rounded-3xl'/>
         </div>
         <div className='flex-1'>
-            <p className='mb-8 max-w-2xl font-Ovo text-xl'>I am a second-year Software Systems student at Simon Fraser University, eager to expand my knowledge 
+            <p className='mb-8 max-w-2xl font-Ovo text-xl'>I am a third-year Software Systems student at Simon Fraser University, eager to expand my knowledge 
                 and skills in software development. I am passionate about learning more about full-stack development, system design, and working on innovative projects that solve real-world problems.
             </p>
 
