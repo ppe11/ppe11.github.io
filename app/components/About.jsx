@@ -16,7 +16,7 @@ const About = () => {
 
         <div className='mx-auto mt-12 flex max-w-5xl flex-col items-center gap-10 lg:flex-row lg:gap-20'>
           <div className='w-56 shrink-0 sm:w-64'>
-            <Image src='/pan-photo.jpg' alt='Pan Phoo Eain' width={720} height={960} className='h-[22rem] w-full rounded-3xl object-cover object-[center_35%]'/>
+            <Image src='/pan-photo.jpg' alt='Pan Phoo Eain' width={720} height={960} className='h-[25rem] w-full rounded-3xl object-cover object-[center_35%]'/>
           </div>
 
           <div className='max-w-2xl flex-1'>
