@@ -3,7 +3,7 @@ import Image from 'next/image';
 import { useRef, useEffect, useState } from 'react';
 import { assets } from '@/assets /assets';
 
-const Navbar = ({isDarkMode, setIsDarkMode}) => {
+const Navbar = ({isDarkMode, setIsDarkMode, onHomeClick}) => {
   const [isScroll, setIsScroll] = useState(false);
   const sideMenuRef = useRef();
 
@@ -28,9 +28,9 @@ const Navbar = ({isDarkMode, setIsDarkMode}) => {
       </div>
 
       <nav className={`w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50 ${isScroll ? "bg-white bg-opacity-50 backdrop-blur-lg shadow-sm dark:bg-darkTheme dark:shadow-white/20" : ""}`}>
-        <div><a href="https://ppe11.github.io" target="_blank" rel="noopener noreferrer" className="text-2xl font-bold">Pan Phoo Eain</a></div>
+        <div><a href="#top" onClick={onHomeClick} className="text-2xl font-bold">Pan Phoo Eain</a></div>
         <ul className={`hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 ${isScroll ? "" : "bg-white shadow-sm bg-opacity-50 dark:border dark:border-white/50 dark:bg-transparent"}`}>
-          <li><a href="#top">Home</a></li>
+          <li><a href="#top" onClick={onHomeClick}>Home</a></li>
           <li><a href="#about">About Me</a></li>
           <li><a href="#experience">Experience</a></li>
           <li><a href="#project">Projects</a></li>
@@ -43,7 +43,7 @@ const Navbar = ({isDarkMode, setIsDarkMode}) => {
         </div>
         <ul ref={sideMenuRef} className='flex md:hidden flex-col gap-4 py-20 px-10 fixed -right-64 top-0 bottom-0 w-64 z-50 h-screen bg-rose-50 transition duration-500 dark:bg-darkHover dark:text-white'>
           <div className='absolute right-6 top-6' onClick={closeMenu}><Image src={isDarkMode ? assets.close_white : assets.close_black} alt='close-menu-icon' className='w-5 cursor-pointer' /></div>
-          <li onClick={closeMenu}><a href="#top">Home</a></li>
+          <li onClick={closeMenu}><a href="#top" onClick={onHomeClick}>Home</a></li>
           <li onClick={closeMenu}><a href="#about">About Me</a></li>
           <li onClick={closeMenu}><a href="#experience">Experience</a></li>
           <li onClick={closeMenu}><a href="#project">Projects</a></li>

@@ -9,6 +9,7 @@ import Footer from "./components/Footer";
 
 export default function Home() {
   const [isDarkMode,setIsDarkMode] = useState(false);
+  const [homeAnimationKey, setHomeAnimationKey] = useState(0);
 
   useEffect(() => {
     if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
@@ -39,10 +40,20 @@ export default function Home() {
     }
   }, [isDarkMode]);
 
+  const replayHomeAnimation = (event) => {
+    event.preventDefault();
+    const scrollStyle = document.documentElement.style.scrollBehavior;
+    document.documentElement.style.scrollBehavior = 'auto';
+    window.history.replaceState(null, '', '#top');
+    window.scrollTo(0, 0);
+    document.documentElement.style.scrollBehavior = scrollStyle;
+    window.requestAnimationFrame(() => setHomeAnimationKey((key) => key + 1));
+  };
+
   return (
     <>
-      <Navbar isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
-      <Header />
+      <Navbar isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} onHomeClick={replayHomeAnimation} />
+      <Header animationKey={homeAnimationKey} />
       <About />
       <Experience />
       <Projects />

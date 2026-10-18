@@ -5,9 +5,9 @@ import Image from 'next/image'
 import { motion } from 'framer-motion'
 import React from 'react'
 
-const Header = () => {
+const Header = ({ animationKey }) => {
   return (
-    <div id="top" className='w-11/12 max-w-3xl text-center mx-auto min-h-screen flex flex-col items-center justify-center gap-4'>
+    <div id="top" key={animationKey} className='w-11/12 max-w-3xl text-center mx-auto min-h-screen flex flex-col items-center justify-center gap-4'>
       <motion.div initial={{ opacity: 0, scale: 0.9 }} whileInView={{ opacity: 1, scale: 1 }} transition={{ duration: 0.6, ease: 'easeOut' }} viewport={{ once: true, amount: 0.5 }}>
         <Image src={assets.profile_img} alt='user-image' className='rounded-full w-32' />
       </motion.div>
