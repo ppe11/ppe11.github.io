@@ -30,7 +30,7 @@ const Navbar = ({isDarkMode, setIsDarkMode}) => {
       <nav className={`w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50 ${isScroll ? "bg-white bg-opacity-50 backdrop-blur-lg shadow-sm dark:bg-darkTheme dark:shadow-white/20" : ""}`}>
         <div><a href="https://ppe11.github.io" target="_blank" rel="noopener noreferrer" className="text-2xl font-bold">Pan Phoo Eain</a></div>
         <ul className={`hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 ${isScroll ? "" : "bg-white shadow-sm bg-opacity-50 dark:border dark:border-white/50 dark:bg-transparent"}`}>
-          <li><a href="https://ppe11.github.io" target="_blank" rel="noopener noreferrer">Home</a></li>
+          <li><a href="#top">Home</a></li>
           <li><a href="#about">About Me</a></li>
           <li><a href="#experience">Experience</a></li>
           <li><a href="#project">Projects</a></li>
